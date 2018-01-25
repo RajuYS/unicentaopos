@@ -190,7 +190,7 @@ ReprintTicketInfo m_Ticket = null;
                     m_sDialogTicket = m_Ticket.getId();
                     
                     JTicketsReprintList.this.setVisible(false);
-                    int iTkt=Integer.valueOf(m_sDialogTicket);
+                    Long iTkt=Long.valueOf(m_sDialogTicket);
                     int iTt = 0;
 //            readTicket(iTkt, iTt);
 // readTicket(m_sDialogTicket);

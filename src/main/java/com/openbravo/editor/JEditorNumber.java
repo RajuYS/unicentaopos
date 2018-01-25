@@ -148,6 +148,23 @@ public abstract class JEditorNumber extends JEditorAbstract {
         firePropertyChange("Text", sOldText, getText());
     }
 
+    public void setValueLong(Long ivalue) {
+        
+        String sOldText = getText();
+        
+        if (ivalue >= 0) {
+            m_sNumber = Long.toString(ivalue);
+            m_bNegative = false;
+            m_iNumberStatus = NUMBER_ZERONULL;            
+        } else {
+            m_sNumber = Long.toString(-ivalue);
+            m_bNegative = true;
+            m_iNumberStatus = NUMBER_ZERONULL;            
+        }
+        reprintText();
+        
+        firePropertyChange("Text", sOldText, getText());
+    }
     /**
      *
      * @return
@@ -160,6 +177,14 @@ public abstract class JEditorNumber extends JEditorAbstract {
             throw new BasicException(e);
         }
     }    
+    
+    public Long getValueLong() throws BasicException {  
+        try {
+            return Long.parseLong(getText());
+        } catch (NumberFormatException e) {
+            throw new BasicException(e);
+        }
+    }   
     
     private String formatDouble(Double value) {
         String sNumber = Double.toString(DoubleUtils.fixDecimals(value));

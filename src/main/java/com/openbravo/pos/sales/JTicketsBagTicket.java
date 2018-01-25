@@ -195,10 +195,10 @@ public class JTicketsBagTicket extends JTicketsBag {
         return this;
     }
       
-    private void readTicket(int iTicketid, int iTickettype) {
-        Integer findTicket=0;    
+    private void readTicket(Long iTicketid, int iTickettype) {
+        Long findTicket=0L;    
         try {
-                findTicket = m_jTicketEditor.getValueInteger();
+                findTicket = m_jTicketEditor.getValueLong();
             }catch (Exception e){            
             }
 
@@ -564,13 +564,13 @@ public class JTicketsBagTicket extends JTicketsBag {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         
-        readTicket(-1, jrbSales.isSelected() ? 0 : 1);
+        readTicket(-1L, jrbSales.isSelected() ? 0 : 1);
         
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void m_jKeysActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m_jKeysActionPerformed
 
-        readTicket(-1, jrbSales.isSelected() ? 0 : 1);
+        readTicket(-1L, jrbSales.isSelected() ? 0 : 1);
         
     }//GEN-LAST:event_m_jKeysActionPerformed
 public int gen_Ticket_status(Long id){

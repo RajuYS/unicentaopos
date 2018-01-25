@@ -31,7 +31,7 @@ import java.util.Date;
  */
 public class FindTicketsInfo implements SerializableRead {
     
-    private int ticketid;
+    private Long ticketid;
     private int tickettype;
     private Date date;
     private String name;
@@ -51,7 +51,7 @@ public class FindTicketsInfo implements SerializableRead {
     @Override
     public void readValues(DataRead dr) throws BasicException {
         
-        ticketid = dr.getInt(1);
+        ticketid = dr.getLong(1);
         tickettype = dr.getInt(2);
         date = dr.getTimestamp(3);
         name = dr.getString(4);
@@ -78,7 +78,7 @@ public class FindTicketsInfo implements SerializableRead {
      *
      * @return
      */
-    public int getTicketId(){
+    public Long getTicketId(){
         return this.ticketid;
     }
     

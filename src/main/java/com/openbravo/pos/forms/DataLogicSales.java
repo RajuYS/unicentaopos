@@ -1530,7 +1530,7 @@ public class DataLogicSales extends BeanFactoryDataSingle {
      * @return
      * @throws BasicException
      */
-    public final TicketInfo loadTicket(final int tickettype, final int ticketid) throws BasicException {
+    public final TicketInfo loadTicket(final int tickettype, final Long ticketid) throws BasicException {
         TicketInfo ticket = (TicketInfo) new PreparedSentence(s
                 , "SELECT "
                 + "T.ID, "
@@ -1554,7 +1554,7 @@ public class DataLogicSales extends BeanFactoryDataSingle {
                 @Override
                     public void writeValues() throws BasicException {
                     setInt(1, tickettype);
-                    setInt(2, ticketid);
+                    setLong(2, ticketid);
                     }});
         
         if (ticket != null) {

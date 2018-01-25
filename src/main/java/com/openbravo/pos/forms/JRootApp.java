@@ -1028,6 +1028,8 @@ public class JRootApp extends JPanel implements AppView, DeviceMonitorEventListe
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/unicenta.png"))); // NOI18N
         jLabel1.setText("<html><center> POS Application<br>" +
+            "Copyright \u00A9 2017-2018 SARAVANA BHAVAN ® <br>" +
+            "http://www.saravanabhavan.com <br>" +
             "</center>");
         jLabel1.setAlignmentX(0.5F);
         jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);

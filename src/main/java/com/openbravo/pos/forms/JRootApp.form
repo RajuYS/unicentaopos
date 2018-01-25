@@ -160,7 +160,7 @@
                       <Image iconType="3" name="/com/openbravo/images/unicenta.png"/>
                     </Property>
                     <Property name="text" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-                      <Connection code="&quot;&lt;html&gt;&lt;center&gt; POS Application&lt;br&gt;&quot; +&#xa;       &quot;&lt;/center&gt;&quot;" type="code"/>
+                      <Connection code="&quot;&lt;html&gt;&lt;center&gt; POS Application&lt;br&gt;&quot; +&#xa;&quot;Copyright \u00A9 2017-2018 SARAVANA BHAVAN &#xae; &lt;br&gt;&quot; +&#xa;&quot;http://www.saravanabhavan.com &lt;br&gt;&quot; +&#xa;    &quot;&lt;/center&gt;&quot;" type="code"/>
                     </Property>
                     <Property name="alignmentX" type="float" value="0.5"/>
                     <Property name="horizontalTextPosition" type="int" value="0"/>

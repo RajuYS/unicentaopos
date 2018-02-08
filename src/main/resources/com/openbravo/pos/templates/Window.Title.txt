@@ -1,1 +1,1 @@
-uniCenta oPOS - Touch Friendly Point Of Sale
+The Johns Hopkins Hospital - Point of sale Application

@@ -452,7 +452,7 @@ CREATE INDEX RECEIPTS_INX_1 ON receipts(datenew);
 CREATE TABLE tickets (
     id VARCHAR NOT NULL,
     tickettype INTEGER DEFAULT 0 NOT NULL,
-    ticketid INTEGER NOT NULL,
+    ticketid bigint NOT NULL,
     person VARCHAR NOT NULL,
     customer VARCHAR DEFAULT NULL,
     status INTEGER DEFAULT 0 NOT NULL,
